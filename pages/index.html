@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Newton Inscrição</title>
+        <link rel="icon" href="/images/ico/favicon.png"/>
+
+        <!-- Load META-TAGS for SEO -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="keywords" content=""/>
+        <META NAME="Googlebot" CONTENT="index,follow">
+        <META NAME="robots" CONTENT="index,follow">
+        <META NAME="Identifier-URL" CONTENT="http://www.">
+        <META NAME="url" CONTENT="http://www.">
+        <META NAME="Language" CONTENT="PT-BR">
+        <META NAME="content-language" CONTENT="pt-br">
+        <META NAME="distribution" CONTENT="Global">
+        <META NAME="coverage" CONTENT="Worldwide">
+        <META NAME="Author" CONTENT="www.evolveme.com.br">
+        <META NAME="Generator" CONTENT="">
+        <meta name="description" content=""/>
+
+        <!-- Load Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,900&display=swap" rel="stylesheet">
+
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../css/style.css">
+    
+    </head>
+
+    <body class="inscricao">
+        <main>
+            <section class="container form-container position-relative py-5">
+                <button class="inscricao__close">Fechar</button>
+                <header class="px-3 px-lg-5 mt-3 mt-lg-2">
+                    <div class="px-lg-1">
+                        <h1 class="inner-title">Inscreva-se</h1>
+                        <p class="inner-desc mb-4 pb-lg-2">Devido a pandemia de COVID-19 pelo mundo, a
+                            Newton Paiva irá oferecer provas online para inscrições de vestibular, para que
+                            você não fique de fora das nossas campanhas.
+                        </p>
+                        <p class="inner-desc font-weight-bold mb-5 pb-lg-2">
+                            Veja abaixo como a prova será realizada:
+                        </p>
+                    </div>
+                </header>
+                <section class="row mb-5">
+                    <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <article class="justify-content-center align-items-center align-items-md-start text-center text-lg-left">
+                            <div class="d-flex justify-content-center mr-lg-3">
+                                <img
+                                    class="mx-auto form-ico mb-4"
+                                    src="../images/ico/foto.png"
+                                    alt="Ícone representando uma selfie">
+                            </div>
+                            <h2 class="sub-title">
+                                Tire uma foto
+                            </h2>
+                            <p class="sub-desc">
+                                De cara limpa e sem acessórios, como se fosse uma foto para um documento.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <article class="justify-content-center align-items-center align-items-md-start text-center text-lg-left">
+                            <div class="d-flex justify-content-center mr-lg-3">
+                                <img
+                                    class="mx-auto form-ico mb-4"
+                                    src="../images/ico/upload.png"
+                                    alt="Ícone representando um upload">
+                            </div>
+                            <h2 class="sub-title">
+                                Faça o upload
+                            </h2>
+                            <p class="sub-desc">
+                                Faça o upload da sua foto em nosso formulário de inscrição abaixo.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <article class="justify-content-center align-items-center align-items-md-start text-center text-lg-left">
+                            <div class="d-flex justify-content-center mr-lg-3">
+                                <img
+                                    class="mx-auto form-ico mb-4"
+                                    src="../images/ico/prova.png"
+                                    alt="Ícone representando uma prova">
+                            </div>
+                            <h2 class="sub-title">
+                                Dia da prova
+                            </h2>
+                            <p class="sub-desc">
+                                O sistema de provas irá validar se você é realmente quem está fazendo a prova,
+                                com base na sua foto enviada.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                        <article class="justify-content-center justify-content-lg-start align-items-center align-items-md-start text-center text-lg-left">
+                            <div class="d-flex justify-content-center mr-lg-3">
+                                <img
+                                    class="mx-auto form-ico mb-4"
+                                    src="../images/ico/joinha.png"
+                                    alt="Ícone representando um joinha (sinal de afirmativo)">
+                            </div>
+                            <h2 class="sub-title">
+                                Matrícula
+                            </h2>
+                            <p class="sub-desc">
+                                No dia da sua matrícula, iremos utilizar a foto do sistema para validar sua
+                                presença.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+                <form id="form_inscription_vest" class="px-3 pb-3 mt-5 inscricao-form"action="https://meuportalcare.force.com/portaldocandidato/NpLogin" method="POST" autocomplete="off">
+                    <input type="hidden" name="oid" value="00D15000000NPmK">
+                    <input type="hidden" name="lead_source" value="Website">
+                    <input type="hidden" name="input_candidato" value="true">
+                    <input type="hidden" name="00N1500000HoJTd" value="Newton Paiva" title="Grupo">
+
+                    <div class="row px-lg-4">
+                        <div class="col-lg-7">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Nome completo"
+                                    id="last_name"
+                                    name="last_name">
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="form-control mask-cpf"
+                                    placeholder="CPF (somente números)"
+                                    id="CPF__c"
+                                    name="CPF__c">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="E-mail" id="name" name="email">
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="form-group">
+                                <input type="text" class="form-control mask-phone" placeholder="Celular" id="mobile" name="mobile">
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-2 mt-lg-4">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <select type="text" class="form-control" id="tipo_de_ingresso" name="tipo_de_ingresso">
+                                            <option value="" selected disabled>Selecione o tipo de ingresso:</option>
+                                            <option value="Concurso de Bolsas">Concurso de Bolsas</option>
+                                            <option value="Disciplina Isolada">Disciplina Isolada</option>
+                                            <option value="ENEM">ENEM</option>
+                                            <option value="Obtenção de novo título">Obtenção de novo título</option>
+                                            <option value="Retorno/Destrancamento">Retorno/Destrancamento</option>
+                                            <option value="Vestibular Agendado">Vestibular Agendado</option>
+                                            <option value="Transferência">Transferência</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <select type="text" class="form-control" id="Modalidade__c" name="Modalidade__c">
+                                            <option value="" selected disabled>Selecione a modalidade:</option>
+                                            <option value="Presencial">Presencial</option>
+                                            <option value="Semipresencial">Semipresencial</option>
+                                            <option value="EAD">EAD</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <select type="text" class="form-control" id="Curso_de_interesse__c" name="Curso_de_interesse__c">
+                                            <option value="" selected disabled>Selecione o curso:</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex flex-column">
+                                    <input type="file" name="formImage" id="formImage" class="inputfile">
+                                    <div class="w-100">
+                                        <label for="formImage"><span>Escolha uma imagem</span></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-3">
+                                    <label class="custom-checkbox">
+                                        <div class="mask" for="formTermo1" class="m-0">
+                                            <input type="checkbox" name="formTermo1" id="formTermo1">
+                                            <div class="checkmark"></div>
+                                            <span>Eu aceito compartilhar minha imagem para participar da prova do vestibular agendado da Newton Paiva, para verificação de autenticidade</span>
+                                         </div>
+                                    </label>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <label class="custom-checkbox">
+                                        <div class="mask" for="formTermo2" class="m-0">
+                                            <input type="checkbox" name="formTermo2" id="formTermo2">
+                                           <div class="checkmark"></div>
+                                           <span> Eu aceito uso da minha imagem para comparação e validação de inscrição e prova
+                                            da Newton Paiva</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center mt-5">
+                                    <button class="btn-main" type="submit">
+                                        Inscreva-se agora
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+        
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+        
+        <script src="../js/forms.js"></script>
+        <script src="../js/misc.js"></script>
+    </body>
+</html>

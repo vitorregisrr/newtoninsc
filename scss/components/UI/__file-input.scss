@@ -1,0 +1,55 @@
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + div label {
+    cursor: pointer; /* "hand" cursor */
+    transition: transform 0.5s;
+}
+
+.inputfile + div label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: $color-dark;
+    padding: 19px 15px;
+    font-size: 18px;
+    border-radius: 1px;
+    
+    &:after{
+        content: 'Buscar';
+        display: block;
+        background-color: #C4C4C4;
+        border-radius: 3px;
+        color: #545454;
+        font-weight: 400;
+        padding: 5px 34px;
+        transition: all 0.4s;
+    }
+}
+
+.inputfile:focus + div label {
+    outline: none;
+    box-shadow: none;
+}
+
+.inputfile + div label * {
+	pointer-events: none;
+}
+
+.inputfile:focus + div label,
+.inputfile + div label:hover {
+    transform: scale(1.01);
+
+    &:after{
+        background-color: $color-secondary;
+        color: black;
+        transform: scale(1.05);
+    }
+}

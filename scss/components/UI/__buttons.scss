@@ -1,0 +1,39 @@
+.btn-main{
+    background-color: $color-secondary;
+    color: $color-primary;
+    border: none;
+    padding: 32px 36px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: all 0.4s;
+
+    &:hover{
+        background-color: darken($color-secondary, 20);
+        transform: scale(1.04);
+    }
+}
+
+.inscricao__close{
+    position: absolute;
+    top: 8px;
+    right: 0;
+    background-color: #2F1A52;
+    color: $color-secondary;
+    font-weight: bold;
+    text-transform: lowercase;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    padding: 7px 30px;
+    transition: all 0.4s;
+
+    @media screen and (max-width: $bp-MD){
+        right: 12px;
+    }
+
+    &:hover{
+        background-color: darken(#2F1A52, 3);
+        transform: scale(1.05);
+    }
+}

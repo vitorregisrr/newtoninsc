@@ -1,0 +1,34 @@
+//Import Variables //
+@import './variables/__all';
+
+//Import Mixins //
+@import './mixins/__all';
+
+// Import Utils //
+@import  './util/__all';
+
+// Import Components //
+@import './components/__all';
+
+// Import Sections //
+@import './sections/__all';
+
+
+body.inscricao {
+    position: relative;
+    margin: 0;
+    background-color: #472D72;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+
+    @media screen and (max-width: $bp-MD){
+        font-size: 14px;
+    }
+}
+
+html{
+    overflow-x: hidden;
+}

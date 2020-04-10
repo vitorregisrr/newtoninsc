@@ -1,0 +1,64 @@
+.form-control {
+    width: 100%;
+    padding: 0 0 15px 0;
+    border-radius: 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff !important;
+    font-size: 18px;
+    font-weight: 300;
+    @include transition();
+
+    @media screen and (max-width: $bp-LG){
+        font-size: 16px;
+        padding-bottom: 6px;
+        margin-bottom: 22px;
+    }
+
+    &:focus {
+        box-shadow: none;
+        outline: none;
+        background: none;
+        border-color: #fff;
+    }
+
+    &::placeholder{
+        color: #fff;
+    }
+}
+
+select.form-control{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    
+    &::-ms-expand {
+        display: none;
+    }
+    
+    option{
+        color: $color-dark !important;
+        padding: 30px 15px;
+
+        &:disabled{
+            opacity: 0;
+        }
+    }
+}
+
+label.error {
+    display: block !important;
+    color:  $color-secondary !important;
+    opacity: .8 !important;
+    font-size: 13px !important;
+    font-weight: 300;
+    padding-top: 5px;
+    order: 5;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}

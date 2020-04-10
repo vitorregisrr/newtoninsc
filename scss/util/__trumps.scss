@@ -1,0 +1,47 @@
+.inner-title{
+    text-transform: uppercase;
+    color: $color-secondary;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    font-style: italic;
+
+    @media screen and (max-width: $bp-LG){
+        font-size: 40px;
+    }
+}
+
+.sub-title{
+    color: $color-secondary;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.inner-desc{
+    text-align: center;
+    line-height: 1.5;
+}
+
+.sub-desc{
+    max-width: 190px;
+    line-height: 1.8;
+    
+    @media screen and (max-width: $bp-LG){
+        margin: 0 auto;
+        max-width: 230px;
+    }
+}
+
+.container.form-container{
+    @media screen and (min-width: $bp-XL){
+        max-width: 900px !important;
+    }
+}
+
+.form-ico{
+    height: 77px;
+    width: 93px;
+    object-fit: contain;
+    object-position: center center;
+}
