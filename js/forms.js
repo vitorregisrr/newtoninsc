@@ -1,4 +1,4 @@
-// Custom file input
+// !! Custom file input !! //
 var inputs = document.querySelectorAll('.inputfile');
 Array
     .prototype
@@ -29,14 +29,12 @@ Array
         });
     });
 
-// Masks
+// !! Masks !! //
 $('.mask-phone').mask('00 000000000');
 $('.mask-cpf').mask('00000000000');
 
-// Custom CPF validate method
-$
-    .validator
-    .addMethod("cpf", function (value, element) {
+// !! Custom CPF validate method !! //
+$.validator.addMethod("cpf", function (value, element) {
         value = jQuery.trim(value);
         value = value.replace('.', '');
         value = value.replace('.', '');
@@ -83,7 +81,7 @@ $
 
     }, "Informe um CPF válido");
 
-// Form validation
+// !! Form validation !! //
 var form = $('#form_inscription_vest');
 form.validate({
     ignore: "",
@@ -185,7 +183,7 @@ form.validate({
     }
 });
 
-// Lista de cursos
+// !! Lista de cursos !! //
 var cursos = [
     // Gerais
     {
@@ -456,7 +454,7 @@ var cursos = [
     }
 ]
 
-// Dinamic Selects
+// !! Handler mudança de ingresso !! //
 $('#tipo_de_ingresso').change((e) => {
     $('#Modalidade__c').removeAttr('disabled');
     updateCursos();
@@ -473,12 +471,14 @@ $('#tipo_de_ingresso').change((e) => {
     }
 });
 
+// !! Handler mudança de modalidade !! //
 $('#Modalidade__c').change((e) => {
     updateCursos();
     setCampaingId();
     $('#Curso_de_interesse__c').removeAttr('disabled');
 });
 
+// !! Função que testa quais cursos podem ser exibidos e altera o HTML !! //
 function updateCursos() {
     // Pega os valores atuais do FORM
     var currentIngresso = $('#tipo_de_ingresso').val();
@@ -507,6 +507,7 @@ function updateCursos() {
     $('#Curso_de_interesse__c').html(html);
 }
 
+// !! Função para alterar id da campanha !! //
 function setCampaingId() {
     var selingresso = $('#tipo_de_ingresso').val();
     var value = $('#Modalidade__c').val();
@@ -591,7 +592,7 @@ function setCampaingId() {
     }
 }
 
-// O botão de enviar na verdade só intercepta o envio, não é submit
+// !! O botão de enviar na verdade só intercepta o envio, não é submit !! //
 function enviar(e){
     var validation = $('#form_inscription_vest').valid();
     if (validation) {
