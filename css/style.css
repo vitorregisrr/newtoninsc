@@ -173,7 +173,7 @@ label.error {
   background-color: #FBF166;
   color: #472D72;
   border: none;
-  padding: 32px 36px;
+  padding: 26px 36px;
   font-size: 20px;
   font-weight: 700;
   border-radius: 6px;
@@ -226,7 +226,8 @@ label.error {
   display: flex;
   align-items: center;
   font-size: 12px;
-  padding-left: 22px;
+  padding-top: 2px;
+  padding-left: 25px;
 }
 
 .custom-checkbox .mask:hover .checkmark {
@@ -249,7 +250,7 @@ label.error {
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  height: 14px;
+  height: 15px;
   width: 15px;
   background-color: transparent;
   border: 1px solid #fff;
