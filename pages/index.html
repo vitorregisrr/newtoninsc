@@ -24,7 +24,9 @@
         <meta name="description" content=""/>
 
         <!-- Load Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,900&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,900&display=swap"
+            rel="stylesheet">
 
         <link
             rel="stylesheet"
@@ -34,7 +36,7 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="../css/style.css">
-    
+
     </head>
 
     <body class="inscricao">
@@ -55,7 +57,8 @@
                 </header>
                 <section class="row mb-3 mb-lg-5">
                     <div class="col-6 col-lg-3 mb-4 mb-lg-0">
-                        <article class="justify-content-center align-items-center align-items-md-start text-center text-lg-left">
+                        <article
+                            class="justify-content-center align-items-center align-items-md-start text-center text-lg-left">
                             <div class="d-flex justify-content-center mr-lg-3">
                                 <img
                                     class="mx-auto form-ico mb-4"
@@ -71,7 +74,8 @@
                         </article>
                     </div>
                     <div class="col-6 col-lg-3 mb-4 mb-lg-0">
-                        <article class="justify-content-center align-items-center align-items-md-start text-center text-lg-left">
+                        <article
+                            class="justify-content-center align-items-center align-items-md-start text-center text-lg-left">
                             <div class="d-flex justify-content-center mr-lg-3">
                                 <img
                                     class="mx-auto form-ico mb-4"
@@ -87,7 +91,8 @@
                         </article>
                     </div>
                     <div class="col-6 col-lg-3 mb-4 mb-lg-0">
-                        <article class="justify-content-center align-items-center align-items-md-start text-center text-lg-left">
+                        <article
+                            class="justify-content-center align-items-center align-items-md-start text-center text-lg-left">
                             <div class="d-flex justify-content-center mr-lg-3">
                                 <img
                                     class="mx-auto form-ico mb-4"
@@ -104,7 +109,8 @@
                         </article>
                     </div>
                     <div class="col-6 col-lg-3 mb-4 mb-lg-0">
-                        <article class="justify-content-center justify-content-lg-start align-items-center align-items-md-start text-center text-lg-left">
+                        <article
+                            class="justify-content-center justify-content-lg-start align-items-center align-items-md-start text-center text-lg-left">
                             <div class="d-flex justify-content-center mr-lg-3">
                                 <img
                                     class="mx-auto form-ico mb-4"
@@ -121,11 +127,26 @@
                         </article>
                     </div>
                 </section>
-                <form id="form_inscription_vest" class="px-3 pb-3 mt-3 mt-lg-4 inscricao-form"action="https://meuportalcare.force.com/portaldocandidato/NpLogin" method="POST" autocomplete="off">
+                <form
+                    id="form_inscription_vest"
+                    class="px-3 pb-3 mt-3 mt-lg-4 inscricao-form"
+                    action="https://meuportalcare.force.com/portaldocandidato/NpLogin"
+                    method="POST"
+                    autocomplete="off"
+                    novalidate="novalidate"
+                    target="_parent">
                     <input type="hidden" name="oid" value="00D15000000NPmK">
                     <input type="hidden" name="lead_source" value="Website">
                     <input type="hidden" name="input_candidato" value="true">
                     <input type="hidden" name="00N1500000HoJTd" value="Newton Paiva" title="Grupo">
+                    <input type="hidden" class="form-control" name="campaign_id" id="campaign_id"/>
+                    <input
+                        type="hidden"
+                        value="Graduação"
+                        name="Tipo_de_Ensino__c"
+                        id="Tipo_de_Ensino__c"
+                        class="Tipo_de_Ensino__c">
+                    <input type="hidden" value="Landing Page">
 
                     <div class="row px-lg-4">
                         <div class="col-lg-7">
@@ -150,12 +171,22 @@
                         </div>
                         <div class="col-lg-7">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="E-mail" id="name" name="email">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="E-mail"
+                                    id="name"
+                                    name="email">
                             </div>
                         </div>
                         <div class="col-lg-5">
                             <div class="form-group">
-                                <input type="text" class="form-control mask-phone" placeholder="Celular" id="mobile" name="mobile">
+                                <input
+                                    type="text"
+                                    class="form-control mask-phone"
+                                    placeholder="Celular"
+                                    id="mobile"
+                                    name="mobile">
                             </div>
                         </div>
 
@@ -163,7 +194,11 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <select type="text" class="form-control" id="tipo_de_ingresso" name="tipo_de_ingresso">
+                                        <select
+                                            type="text"
+                                            class="form-control"
+                                            id="tipo_de_ingresso"
+                                            name="tipo_de_ingresso">
                                             <option value="" selected disabled>Selecione o tipo de ingresso:</option>
                                             <option value="Disciplina Isolada">Disciplina Isolada</option>
                                             <option value="ENEM">ENEM</option>
@@ -176,7 +211,12 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <select type="text" class="form-control" id="Modalidade__c" name="Modalidade__c" disabled="true">
+                                        <select
+                                            type="text"
+                                            class="form-control"
+                                            id="Modalidade__c"
+                                            name="Modalidade__c"
+                                            disabled="true">
                                             <option value="" selected disabled>Selecione a modalidade:</option>
                                             <option value="Presencial">Presencial</option>
                                             <option value="Semi-Presencial">Sem-Presencial</option>
@@ -186,7 +226,12 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <select type="text" class="form-control" id="Curso_de_interesse__c" name="Curso_de_interesse__c" disabled="true">
+                                        <select
+                                            type="text"
+                                            class="form-control"
+                                            id="Curso_de_interesse__c"
+                                            name="Curso_de_interesse__c"
+                                            disabled="true">
                                             <option value="" selected disabled>Selecione o curso:</option>
                                         </select>
                                     </div>
@@ -194,7 +239,9 @@
                                 <div class="col-12 d-flex flex-column">
                                     <input type="file" name="formImage" id="formImage" class="inputfile">
                                     <div class="w-100">
-                                        <label for="formImage"><span>Escolha uma imagem</span></label>
+                                        <label for="formImage">
+                                            <span>Escolha uma imagem</span>
+                                        </label>
                                     </div>
                                 </div>
 
@@ -203,22 +250,24 @@
                                         <div class="mask" for="formTermo1" class="m-0">
                                             <input type="checkbox" name="formTermo1" id="formTermo1">
                                             <div class="checkmark"></div>
-                                            <span>Eu aceito compartilhar minha imagem para participar da prova do vestibular agendado da Newton Paiva, para verificação de autenticidade</span>
-                                         </div>
+                                            <span>Eu aceito compartilhar minha imagem para participar da prova do vestibular
+                                                agendado da Newton Paiva, para verificação de autenticidade</span>
+                                        </div>
                                     </label>
                                 </div>
                                 <div class="col-12 mt-1">
                                     <label class="custom-checkbox">
                                         <div class="mask" for="formTermo2" class="m-0">
                                             <input type="checkbox" name="formTermo2" id="formTermo2">
-                                           <div class="checkmark"></div>
-                                           <span> Eu aceito uso da minha imagem para comparação e validação de inscrição e prova
-                                            da Newton Paiva</span>
+                                            <div class="checkmark"></div>
+                                            <span>
+                                                Eu aceito uso da minha imagem para comparação e validação de inscrição e prova
+                                                da Newton Paiva</span>
                                         </div>
                                     </label>
                                 </div>
                                 <div class="col-12 d-flex justify-content-center mt-4 mt-lg-5">
-                                    <button class="btn-main" type="submit">
+                                    <button id="btn-send" class="btn-main" type="button" onclick="enviar();">
                                         Inscreva-se agora
                                     </button>
                                 </div>
@@ -228,18 +277,39 @@
                 </form>
             </section>
         </main>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer'
+                        ? '&l=' + l
+                        : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f
+                    .parentNode
+                    .insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-M2JNLL2');
+        </script>
+        <!-- End Google Tag Manager -->
 
         <script
-        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
-        
+
         <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
-  
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
         <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-        
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
         <script src="../js/forms.js"></script>
         <script src="../js/misc.js"></script>
     </body>
