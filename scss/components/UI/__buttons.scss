@@ -8,6 +8,11 @@
     border-radius: 6px;
     transition: all 0.4s;
 
+    @media screen and (max-width: $bp-LG){
+        font-size: 17px;
+        padding: 20px 30px;
+    }
+
     &:hover{
         background-color: darken($color-secondary, 20);
         transform: scale(1.04);

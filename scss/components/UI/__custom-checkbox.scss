@@ -12,7 +12,6 @@
         display: flex;
         align-items: center;
         font-size: 12px;
-        padding-top: 2px;
         padding-left: 25px;
         
         &:hover{
@@ -36,13 +35,16 @@
   /* Create a custom checkbox */
   .checkmark {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 2px;
     left: 0;
     height: 15px;
     width: 15px;
     background-color: transparent;
     border: 1px solid #fff;
+
+    @media screen and (max-width: $bp-LG){
+      top: 5px;
+    }
   }
   
   /* On mouse-over, add a grey background color */

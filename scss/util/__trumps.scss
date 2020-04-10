@@ -16,6 +16,10 @@
     font-weight: 700;
     font-size: 25px;
     margin-bottom: 8px;
+
+    @media screen and (max-width: $bp-SM){
+        font-size: 19px;
+    }
 }
 
 .inner-desc{
@@ -31,6 +35,11 @@
         margin: 0 auto;
         max-width: 230px;
     }
+
+    @media screen and (max-width: $bp-SM){
+        font-size: 13px;
+        line-height: 1.6;
+    }
 }
 
 .container.form-container{
@@ -44,4 +53,8 @@
     width: 93px;
     object-fit: contain;
     object-position: center center;
+
+    @media screen and (max-width: $bp-SM){
+        height: 66px;
+    }
 }
