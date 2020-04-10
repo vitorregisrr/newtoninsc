@@ -600,6 +600,7 @@ function enviar(e){
         $("#btn-send").attr('disabled', true);
         $('#btn-send').html(`<img src="../images/ico/loading.gif" height="30" />`)
         $.ajax({
+            method: 'POST',
             url: "/",
             data: formData,
             processData: false,
