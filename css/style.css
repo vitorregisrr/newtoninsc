@@ -147,6 +147,10 @@ u {
   border-color: #fff;
 }
 
+.form-control:disabled {
+  background: none;
+}
+
 .form-control::placeholder {
   color: #fff;
 }
@@ -168,7 +172,7 @@ select.form-control option {
 }
 
 select.form-control option:disabled {
-  opacity: 0;
+  background-color: lightgray;
 }
 
 label.error {

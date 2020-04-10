@@ -167,7 +167,288 @@
         }
     });
 
-    // Dinamic campanha
+    // Lista de cursos
+    var cursos = [
+        // Gerais
+        {
+            nome: 'Administração',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Análise e Desenvolvimento de Sistemas',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Arquitetura e Urbanismo',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Ciências Contábeis',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Direito',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Enfermagem',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Engenharia Civil',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Engenharia da Computação',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Engenharia de Controle e Automação',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Engenharia de Produção',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Engenharia Elétrica',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Engenharia Mecânica',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Engenharia Química',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Estética e Cosmética',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Farmácia',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Fisioterapia',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Medicina Veterinária',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Odontologia',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Psicologia',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Sistemas de Informação',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Presencial']
+        },
+        // Semi presenciais
+        {
+            nome: 'Administração (Semipresencial)',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Semi-Presencial']
+        },
+        {
+            nome: 'Ciências Contábeis (Semipresencial)',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['Semi-Presencial']
+        },
+        // Presenciais apenas ENEM
+        {
+            nome: 'Ciências da Computação',
+            ingressos: ['ENEM'],
+            modalidades: ['Presencial']
+        },
+        {
+            nome: 'Jogos Digitais',
+            ingressos: ['ENEM'],
+            modalidades: ['Presencial']
+        },
+        // Disciplinas isoladas EAD
+        {
+            nome: 'Administração - Disciplinas Isoladas',
+            ingressos: ['Disciplina Isolada'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Ciências Contábeis - Disciplinas Isoladas',
+            ingressos: ['Disciplina Isolada'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Pedagogia - Disciplinas Isoladas',
+            ingressos: ['Disciplina Isolada'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Gestão Financeira - Disciplinas Isoladas',
+            ingressos: ['Disciplina Isolada'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Logística - Disciplinas Isoladas',
+            ingressos: ['Disciplina Isolada'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Processos Gerenciais - Disciplinas Isoladas',
+            ingressos: ['Disciplina Isolada'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Gestão de Recursos Humanos - Disciplinas Isoladas',
+            ingressos: ['Disciplina Isolada'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Pedagogia - Formação Pedagógica',
+            ingressos: ['Disciplina Isolada'],
+            modalidades: ['EAD']
+        },
+
+        // Cursos EAD
+        {
+            nome: 'Administração (EAD)',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Vestibular Agendado', 'Transferência'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Ciências Contábeis (EAD)',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Vestibular Agendado', 'Transferência'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Pedagogia',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Vestibular Agendado', 'Transferência'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Gestao Financeira',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Vestibular Agendado', 'Transferência'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Logística',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Vestibular Agendado', 'Transferência'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Processos Gerenciais',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Vestibular Agendado', 'Transferência'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Análise e Desenvolvimento de Sistemas',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Vestibular Agendado', 'Transferência'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Gestão de Recursos Humanos',
+            ingressos: ['ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Vestibular Agendado', 'Transferência'],
+            modalidades: ['EAD']
+        },
+
+        // Cursos EAD apenas ENEM e Vestibular Agendado
+        {
+            nome: 'Tecnologia em Marketing',
+            ingressos: ['ENEM',  'Vestibular Agendado'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Gestão Comercial',
+            ingressos: ['ENEM',  'Vestibular Agendado'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Letras',
+            ingressos: ['ENEM',  'Vestibular Agendado'],
+            modalidades: ['EAD']
+        },
+
+        // Cursos secundários
+        {
+            nome: 'Pedagogia - Formação Pedagógica',
+            ingressos: ['Obtenção de novo título',  'Retorno/destrancamento'],
+            modalidades: ['EAD']
+        },
+        {
+            nome: 'Pedogia - 2ª Licenciatura',
+            ingressos: ['Disciplina Isolada', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'],
+            modalidades: ['EAD']
+        },
+    ]
 
     // Dinamic Selects
+    $('#tipo_de_ingresso').change((e) => {
+        $('#Modalidade__c').removeAttr('disabled');
+        updateCursos();
+
+        // Seta as modalidades disponíveis para o tipo de ingresso
+        const onlyEad = ['Disciplina Isolada', 'Vestibular Agendado'];
+        const allModalidades = ['Transferência', 'Enem', 'Obtenção de novo título', 'Retorno/destrancamento'];
+
+        if(allModalidades.includes(e.target.value)){
+            $('#Modalidade__c').html(`<option value="" selected disabled>Selecione a modalidade:</option><option value="Presencial">Presencial</option><option value="Semi-Presencial">Semi-Presencial</option><option value="EAD">EAD</option>`)
+        
+        }else if(onlyEad.includes(e.target.value)){
+            $('#Modalidade__c').html(`<option value="" selected disabled>Selecione a modalidade:</option><option value="EAD">EAD</option>`)
+        }
+    });
+
+    $('#Modalidade__c').change( (e) => {
+        updateCursos();
+        $('#Curso_de_interesse__c').removeAttr('disabled');
+    });
+
+    function updateCursos (){
+        // Pega os valores atuais do FORM
+        var currentIngresso = $('#tipo_de_ingresso').val();
+        var currentModalidade =  $('#Modalidade__c').val();
+
+        if(currentModalidade){
+            // Filtra os que dão MATCH
+            var cursosElegiveis = cursos.filter(item => {
+                return item.modalidades.includes(currentModalidade) && item.ingressos.includes(currentIngresso)
+            });
+
+            // Adiciona no HTML
+            var html = '<option value="" selected disabled>Selecione a modalidade:</option>';
+            if(cursosElegiveis.length > 0){
+                cursosElegiveis.forEach( item => {
+                    html += `<option value="${item.nome}"> ${item.nome} </option>`
+                });
+            }else{
+                html += '<option value="" selected disabled>Sem opções para esta combinação</option>';
+            }
+        }
+        $('#Curso_de_interesse__c').html(html);
+    }
 })();
