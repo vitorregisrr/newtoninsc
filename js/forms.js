@@ -29,7 +29,7 @@ Array
         });
     });
 
-// !! Masks !! //
+// !! Input Masks !! //
 $('.mask-phone').mask('00 000000000');
 $('.mask-cpf').mask('00000000000');
 
@@ -81,7 +81,7 @@ $.validator.addMethod("cpf", function (value, element) {
 
     }, "Informe um CPF válido");
 
-// !! Form validation !! //
+// !! Form validation with Jquery Validate!! //
 var form = $('#form_inscription_vest');
 form.validate({
     ignore: "",
@@ -460,13 +460,13 @@ $('#tipo_de_ingresso').change((e) => {
     updateCursos();
 
     // Seta as modalidades disponíveis para o tipo de ingresso
-    const onlyEad = ['Disciplina Isolada', 'Vestibular Agendado'];
-    const allModalidades = ['Transferência', 'Enem', 'Obtenção de novo título', 'Retorno/destrancamento'];
+    const showOnlyEad = ['Disciplina Isolada', 'Vestibular Agendado'];
+    const showAll = ['Transferência', 'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento'];
 
-    if (allModalidades.includes(e.target.value)) {
+    if (showAll.includes(e.target.value)) {
         $('#Modalidade__c').html(`<option value="" selected disabled>Selecione a modalidade:</option><option value="Presencial">Presencial</option><option value="Semi-Presencial">Semi-Presencial</option><option value="EAD">EAD</option>`)
 
-    } else if (onlyEad.includes(e.target.value)) {
+    } else if (showOnlyEad.includes(e.target.value)) {
         $('#Modalidade__c').html(`<option value="" selected disabled>Selecione a modalidade:</option><option value="EAD">EAD</option>`)
     }
 });
@@ -487,15 +487,12 @@ function updateCursos() {
     if (currentModalidade) {
         // Filtra os que dão MATCH
         var cursosElegiveis = cursos.filter(item => {
-            return item
-                .modalidades
-                .includes(currentModalidade) && item
-                .ingressos
-                .includes(currentIngresso)
+            return item.modalidades.includes(currentModalidade) && 
+                   item.ingressos.includes(currentIngresso)
         });
 
         // Adiciona no HTML
-        var html = '<option value="" selected disabled>Selecione a modalidade:</option>';
+        var html = '<option value="" selected disabled>Selecione o curso:</option>';
         if (cursosElegiveis.length > 0) {
             cursosElegiveis.forEach(item => {
                 html += `<option value="${item.nome}"> ${item.nome} </option>`
@@ -596,18 +593,42 @@ function setCampaingId() {
 function enviar(e){
     var validation = $('#form_inscription_vest').valid();
     if (validation) {
-        var formData = new FormData(document.getElementById('form_inscription_vest'));
-    
         $("#btn-send").attr('disabled', true);
-        $('#btn-send').html(`<img src="../images/ico/loading.gif" height="30" />`)
+        $('#btn-send').html(`<img src="../images/ico/loading.gif" height="30" />`);
+
+        const formValues = {
+            nome: $('#last_name').val(),
+            cpf: $('#CPF__c').val(),
+            email: $('#email').val(),
+            mobile: $('#mobile').val(),
+            tipodeingresso: $('#tipo_de_ingresso').val(),
+            modalidade: $('#Modalidade__c').val(),
+            curso: $('#Curso_de_interesse__c').val(),
+            imagem: $('#formImage').get(0).files[0],
+            termo1: 1,
+            termo2: 1
+        };
+
+        var formData = new FormData();
+        formData.append('nome', formValues.nome);
+        formData.append('cpf', formValues.cpf);
+        formData.append('email', formValues.email);
+        formData.append('celular', formValues.mobile);
+        formData.append('tipodeingresso', formValues.tipodeingresso);
+        formData.append('modalidade', formValues.modalidade);
+        formData.append('curso', formValues.curso);
+        formData.append('imagem', formValues.imagem);
+        formData.append('termo1', formValues.termo1);
+        formData.append('termo2', formValues.termo2);
+
         $.ajax({
             method: 'POST',
-            url: "/",
+            url: "http://cadastro.newtonpaiva.br/novo-cadastro",
             data: formData,
-            processData: false,
             contentType: false,
+            processData: false,
             success: function(result){
-                $('#form_inscription_vest').submit();
+                // $('#form_inscription_vest').submit();
             }}
         );
     }
