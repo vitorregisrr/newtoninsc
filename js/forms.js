@@ -468,8 +468,8 @@ $('#tipo_de_ingresso').change((e) => {
     updateCursos();
 
     // Seta as modalidades disponíveis para o tipo de ingresso
-    const showOnlyEad = ['Disciplina Isolada', 'Vestibular Agendado'];
-    const showAll = ['Transferência', 'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento'];
+    const showOnlyEad = ['Disciplina Isolada'];
+    const showAll = ['Transferência', 'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Vestibular Agendado'];
 
     if (showAll.includes(e.target.value)) {
         $('#Modalidade__c').html(`<option value="" selected disabled>Selecione a modalidade:</option><option value="Presencial">Presencial</option><option value="Semi-Presencial">Semi-Presencial</option><option value="EAD">EAD</option>`)
