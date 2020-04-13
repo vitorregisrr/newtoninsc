@@ -34,7 +34,9 @@ $('.mask-phone').mask('00 000000000');
 $('.mask-cpf').mask('00000000000');
 
 // !! Custom CPF validate method !! //
-$.validator.addMethod("cpf", function (value, element) {
+$
+    .validator
+    .addMethod("cpf", function (value, element) {
         value = jQuery.trim(value);
         value = value.replace('.', '');
         value = value.replace('.', '');
@@ -189,121 +191,121 @@ var cursos = [
     {
         nome: 'Administração',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Análise e Desenvolvimento de Sistemas',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Arquitetura e Urbanismo',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Ciências Contábeis',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Direito',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Enfermagem',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Engenharia Civil',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Engenharia da Computação',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Engenharia de Controle e Automação',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Engenharia de Produção',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Engenharia Elétrica',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Engenharia Mecânica',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Engenharia Química',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Estética e Cosmética',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Farmácia',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Fisioterapia',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Medicina Veterinária',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Odontologia',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Psicologia',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     }, {
         nome: 'Sistemas de Informação',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Presencial']
     },
@@ -311,24 +313,30 @@ var cursos = [
     {
         nome: 'Administração (Semipresencial)',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
+        ],
+        modalidades: ['Semi-Presencial']
+    }, {
+        nome: 'Análise e Desenvolvimento de Sistemas (Semipresencial)',
+        ingressos: [
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Semi-Presencial']
     }, {
         nome: 'Ciências Contábeis (Semipresencial)',
         ingressos: [
-            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência'
+            'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Transferência', 'Vestibular Agendado'
         ],
         modalidades: ['Semi-Presencial']
     },
     // Presenciais apenas ENEM
     {
         nome: 'Ciências da Computação',
-        ingressos: ['ENEM'],
+        ingressos: ['ENEM', 'Vestibular Agendado'],
         modalidades: ['Presencial']
     }, {
         nome: 'Jogos Digitais',
-        ingressos: ['ENEM'],
+        ingressos: ['ENEM', 'Vestibular Agendado'],
         modalidades: ['Presencial']
     },
     // Disciplinas isoladas EAD
@@ -404,7 +412,7 @@ var cursos = [
         ],
         modalidades: ['EAD']
     }, {
-        nome: 'Análise e Desenvolvimento de Sistemas',
+        nome: 'Análise e Desenvolvimento de Sistemas (EAD)',
         ingressos: [
             'ENEM', 'Obtenção de novo título', 'Retorno/destrancamento', 'Vestibular Agendado', 'Transferência'
         ],
@@ -487,8 +495,11 @@ function updateCursos() {
     if (currentModalidade) {
         // Filtra os que dão MATCH
         var cursosElegiveis = cursos.filter(item => {
-            return item.modalidades.includes(currentModalidade) && 
-                   item.ingressos.includes(currentIngresso)
+            return item
+                .modalidades
+                .includes(currentModalidade) && item
+                .ingressos
+                .includes(currentIngresso)
         });
 
         // Adiciona no HTML
@@ -590,7 +601,7 @@ function setCampaingId() {
 }
 
 // !! O botão de enviar na verdade só intercepta o envio, não é submit !! //
-function enviar(e){
+function enviar(e) {
     var validation = $('#form_inscription_vest').valid();
     if (validation) {
         $("#btn-send").attr('disabled', true);
@@ -604,7 +615,9 @@ function enviar(e){
             tipodeingresso: $('#tipo_de_ingresso').val(),
             modalidade: $('#Modalidade__c').val(),
             curso: $('#Curso_de_interesse__c').val(),
-            imagem: $('#formImage').get(0).files[0],
+            imagem: $('#formImage')
+                .get(0)
+                .files[0],
             termo1: 1,
             termo2: 1
         };
@@ -627,9 +640,9 @@ function enviar(e){
             data: formData,
             contentType: false,
             processData: false,
-            success: function(result){
+            success: function (result) {
                 $('#form_inscription_vest').submit();
-            }}
-        );
+            }
+        });
     }
 };
