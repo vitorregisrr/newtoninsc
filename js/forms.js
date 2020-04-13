@@ -594,7 +594,7 @@ function enviar(e){
     var validation = $('#form_inscription_vest').valid();
     if (validation) {
         $("#btn-send").attr('disabled', true);
-        $('#btn-send').html(`<img src="../images/ico/loading.gif" height="30" />`);
+        $('#btn-send').html(`<img src="./images/ico/loading.gif" height="30" />`);
 
         const formValues = {
             nome: $('#last_name').val(),
@@ -628,7 +628,7 @@ function enviar(e){
             contentType: false,
             processData: false,
             success: function(result){
-                // $('#form_inscription_vest').submit();
+                $('#form_inscription_vest').submit();
             }}
         );
     }
